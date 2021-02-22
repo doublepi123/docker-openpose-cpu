@@ -34,7 +34,7 @@ RUN cmake -DGPU_MODE:String=CPU_ONLY \
           -DUSE_MKL:Bool=OFF \
           ..
 
-RUN make -j # yolo
+RUN make -j1 # yolo
 
 RUN apt-get remove wget unzip cmake git build-essential -y && apt-get autoremove -y
 
