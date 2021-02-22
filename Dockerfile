@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 LABEL maintainer="sean@seancook.dev"
 LABEL description="CPU-only version of OpenPose. Not slimmed for production."
