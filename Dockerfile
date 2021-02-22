@@ -38,8 +38,4 @@ RUN make -j1 # yolo
 
 RUN apt-get remove wget unzip cmake git build-essential -y && apt-get autoremove -y
 
-WORKDIR /openpose
-
-ENTRYPOINT ["build/examples/openpose/openpose.bin"]
-
 CMD ["--help"]
